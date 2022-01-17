@@ -4,7 +4,7 @@ import Header from "../Componente/Header/Header";
 
 export default class LandingPage extends Component {
 
-    state = {
+   /* state = {
         model: {
             nome: "",
             email: "",
@@ -14,7 +14,7 @@ export default class LandingPage extends Component {
     }
 
     setValues = (e, field) => {
-        
+
         const {model} = this.state;
         model[field] = e.target.value;
         this.setState({model});
@@ -37,6 +37,7 @@ export default class LandingPage extends Component {
 
         fetch(url, requestInfo)
     }
+    */
 
     render() {
 

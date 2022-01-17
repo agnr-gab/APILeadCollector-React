@@ -1,7 +1,6 @@
 import React, {Component} from "react";
-import Login from "./Componente/PagesLogin";
 import "./App.css";
-
+import Login from "./Componente/PagesLogin";
 export default class App extends Component {
   render() {
     return(
