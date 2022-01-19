@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import { Form, FormGroup, Label, Input, Button, Alert } from 'reactstrap';
-import Header from "../Header/Header";
 
 export default class Login extends Component {
 
@@ -40,6 +39,7 @@ export default class Login extends Component {
       }).then(token => {
 
         localStorage.setItem("token", token);
+        this.props.history.push("/dashboard")
 
       }).catch(
         e => {
@@ -54,8 +54,9 @@ export default class Login extends Component {
     return (
 
       <div>
-
-        <Header title="Login de Usuário" />
+        <header>
+          <h1 className="text-center"> {"Login de Usuário"} </h1>
+        </header>
         <hr />
 
         { //condição verdadeira (caminho feliz) operador ternário

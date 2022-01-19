@@ -1,11 +1,13 @@
 import React, {Component} from "react";
 import "./App.css";
-import Login from "./Componente/PagesLogin";
+import Routes from "./routes";
 export default class App extends Component {
+
   render() {
+
     return(
       <div className="App">
-        <Login/>
+        <Routes/>
       </div>
     );
   }

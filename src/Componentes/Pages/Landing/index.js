@@ -1,6 +1,7 @@
 import react, { Component } from "react";
 import { Form, FormGroup, Label, Input, Button, Alert } from "reactstrap";
-import Header from "../../Header";
+
+
 
 export default class Landing extends Component {
 
@@ -43,7 +44,9 @@ export default class Landing extends Component {
   render() {
     return (
       <div>
-        <Header title="Landing Page" />
+        <header>
+          <h1 className="text-center"> {"Landing Page"} </h1>
+        </header>
         <hr />
 
         {
@@ -52,7 +55,7 @@ export default class Landing extends Component {
           ) : ''
         }
 
-        <Form className="formulario">
+        <Form className="for">
 
           <FormGroup>
             <Label for="nome"> Nome: </Label>
@@ -70,7 +73,7 @@ export default class Landing extends Component {
               type="textarea" id="observations" onChange={e => this.observacoes = e.target.value} placeholder="Digite alguma observação" />
           </FormGroup>
 
-          <Button color="danger" block onClick={this.signIn}>            
+          <Button color="danger" block onClick={this.signIn}>
             ENVIAR
           </Button>
         </Form>
